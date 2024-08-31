@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin id="cordova-plugin-htmlprinter" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0">
+<plugin id="printer_plugin" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0">
     <name>HtmlPrinter</name>
     <description>A Cordova plugin to print HTML content to a Bluetooth thermal printer.</description>
     <license>MIT</license>
