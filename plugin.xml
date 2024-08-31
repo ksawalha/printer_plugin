@@ -1,0 +1,14 @@
+<plugin id="cordova-plugin-htmlprinter" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0">
+    <name>HtmlPrinter</name>
+    <js-module src="www/htmlprinter.js" name="HtmlPrinter">
+        <clobbers target="HtmlPrinter" />
+    </js-module>
+    <platform name="android">
+        <config-file target="config.xml" parent="/*">
+            <feature name="HtmlPrinter">
+                <param name="android-package" value="com.karamsawalha.fjo.HtmlPrinter" />
+            </feature>
+        </config-file>
+        <source-file src="src/android/HtmlPrinter.java" target-dir="src/com/karamsawalha/fjo" />
+    </platform>
+</plugin>
