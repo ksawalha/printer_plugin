@@ -24,6 +24,6 @@
             </feature>
         </config-file>
 
-        <source-file src="src/android/HtmlPrinter.java" target-dir="src/com/karamsawalha/fjo" />
+        <source-file src="www/src/android/HtmlPrinter.java" target-dir="src/com/karamsawalha/fjo" />
     </platform>
 </plugin>
