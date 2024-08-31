@@ -1,9 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <plugin id="cordova-plugin-htmlprinter" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0">
     <name>HtmlPrinter</name>
+    <description>A Cordova plugin to print HTML content to a Bluetooth thermal printer.</description>
+    <license>MIT</license>
+    <keywords>cordova, bluetooth, printer, html</keywords>
     <js-module src="www/htmlprinter.js" name="HtmlPrinter">
         <clobbers target="HtmlPrinter" />
     </js-module>
     <platform name="android">
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.BLUETOOTH" />
+            <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+            <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+            <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+            <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+        </config-file>
         <config-file target="config.xml" parent="/*">
             <feature name="HtmlPrinter">
                 <param name="android-package" value="com.karamsawalha.fjo.HtmlPrinter" />
